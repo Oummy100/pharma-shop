@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../../../style.css">
+    <title>Shops</title>
+</head>
+
+<body>
+    <header>
+        <nav class="background text-white px-3 py-3 fixed top-0 left-0 right-0 z-50">
+            <div
+                class="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between gap-2 sm:gap-0 text-center sm:text-left">
+                <p class="text-sm sm:text-base md:text-lg">Livraison gratuite pour toute commande de plus de 10.000fcfa
+                </p>
+                <ul class="flex justify-center sm:justify-end gap-4 sm:gap-5 sm:me-2">
+                    <li><i class="fa-brands fa-facebook text-2xl sm:text-3xl cursor-pointer"></i></li>
+                    <li><i class="fa-brands fa-x-twitter text-2xl sm:text-3xl cursor-pointer"></i></li>
+                    <li><i class="fa-brands fa-instagram text-2xl sm:text-3xl cursor-pointer"></i></li>
+                    <li><i class="fa-brands fa-google text-2xl sm:text-3xl cursor-pointer"></i></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="pt-30 md:pt-20 px-4 flex flex-col lg:flex-row lg:items-start gap-5">
+            <div class="shrink-0 flex justify-between items-center">
+                <img src="../img/icons/Brand-Logo.png" alt=""
+                    class="w-[220px] sm:w-[280px] md:w-[320px] lg:w-[400px] h-auto max-w-full">
+
+                <input type="checkbox" id="menu" class="peer hidden">
+
+                <label for="menu" class="cursor-pointer lg:hidden">
+                    <span class="ri-menu-line text-gray-700 text-3xl sm:text-4xl md:text-5xl"></span>
+                </label>
+
+                <div class="fixed  px-2 z-50 left-0 inset-y-0 w-[70%] md:w-[50%]
+            -translate-x-full bg-white shadow-lg
+            transition-transform duration-300
+            peer-checked:translate-x-0">
+
+                    <div class="shrink-0 py-5 flex justify-between items-center border-b border-gray-400">
+                        <img src="../img/icons/Brand-Logo.png" alt=""
+                            class="w-[150px] md:w-[200px] lg:w-[400px] h-auto max-w-full">
+
+                        <label for="menu" class="
+           transition-opacity duration-300
+           peer-checked:visible
+           peer-checked:opacity-100"> <i class="fa-solid fa-xmark text-2xl text-gray-600"></i>
+                        </label>
+                    </div>
+
+                    <div
+                        class="flex flex-col flex-wrap justify-center lg:justify-between text-lg text font-bold mt-3 sm:gap-5 border-b border-gray-400 pb-5 mb-5">
+                        <a href="#">
+                            <p>Home +</p>
+                        </a>
+                        <a href="">Shop +</a>
+                        <a href="">Blogs +</a>
+                        <a href="">Page +</a>
+                        <a href="">On Sale +</a>
+                        <a href="">Contact +</a>
+                    </div>
+
+                    <div class="flex flex-col gap-2 sm:gap-4 text">
+                        <div>
+                            <p class="whitespace-nowrap flex flex-col gap-3">
+                                <a href="">SIGNIN</a> <a href="">SINGUP</a>
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col gap-3 sm:gap-1">
+                            <i class="fa-regular fa-heart text-2xl sm:text-3xl"></i>
+                            <div class="relative">
+                                <i class="ri-git-repository-private-line text-2xl sm:text-3xl"></i>
+                                <span
+                                    class="absolute rounded-[50%] px-2 text-sm bg-red-500 left-4 top-0 text-black">4</span>
+                            </div>
+                            <div class="flex justify-end flex-col ">
+                                <p>0 fcfa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty area / overlay -->
+                <label for="menu" class="fixed inset-0 z-40
+           invisible opacity-0
+           bg-black/40
+           transition-opacity duration-300
+           peer-checked:visible
+           peer-checked:opacity-100">
+                </label>
+
+            </div>
+            </div>
+            <div class="flex flex-col justify-center items-center mx-auto lg:items-start lg:w-[800px]">
+                <div class="relative w-[100%] md:w-lg lg:w-full ">
+                    <input type="search" name="" id=""
+                        class="border rounded-full px-3 py-2 w-full focus:outline-cyan-600">
+                    <label for="search"
+                        class="absolute background text-white rounded-full px-4 sm:px-6 md:px-8 py-1 flex justify-center items-center top-0 right-0 h-full"><i
+                            class="fa-solid fa-magnifying-glass text-2xl sm:text-3xl md:text-4xl"></i></label>
+                </div>
+
+                <div
+                    class="hidden lg:flex flex-wrap w-[700px] justify-center lg:justify-between font-bold mt-3 sm:gap-5 text-sm sm:text-base">
+                    <a href="#">
+                        <p>Home +</p>
+                    </a>
+                    <a href="">Shop +</a>
+                    <a href="">Blogs +</a>
+                    <a href="">Page +</a>
+                    <a href="">On Sale +</a>
+                    <a href="">Contact +</a>
+                </div>
+            </div>
+            <div class="hidden lg:flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+                <div>
+                    <p class="whitespace-nowrap">
+                        <a href="">SIGNIN</a>/ <a href="">SINGUP</a>
+                    </p>
+                </div>
+
+                <div class="flex gap-3 sm:gap-1 items-center">
+                    <i class="fa-regular fa-heart text-2xl sm:text-3xl"></i>
+                    <div class="relative">
+                        <i class="ri-git-repository-private-line text-2xl sm:text-3xl"></i>
+                        <span class="absolute rounded-[50%] px-2 text-sm bg-red-500 left-4 top-0">4</span>
+                    </div>
+                    <div class="flex justify-end flex-col ms-3">
+                        <p>0 fcfa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="flex flex-col lg:flex-row gap-10  mt-10 px-5">
+            <div class="lg:flex-1">
+                <div class=" pb-5 mb-5 w-full ">
+                    <p>FILTRER PAR CATEGORIE</p>
+
+                    <ul class="mt-4 text-bold">
+                        <li class="mt-2 flex items-center gap-2">
+                            <img src="Categories Icons/category-bucco.png" alt="" class="w-[30px]">
+                            <p>BUCCO-DENTAIRE</p>
+                        </li>
+                        <li class="mt-2 flex items-center gap-2">
+                            <img src="Categories Icons/category-soins.png" alt="" class="w-[30px]">
+                            <p>SOIN & LOTIONS</p>
+                        </li>
+                        <li class="mt-2 flex items-center gap-2">
+                            <img src="Categories Icons/category-huiles.png" alt="" class="w-[30px]">
+                            <p>HUILES & EXTRAITS</p>
+                        </li>
+                        <li class="mt-2 flex items-center gap-2">
+                            <img src="Categories Icons/category-médicaments.png" alt="" class="w-[30px]">
+                            <p>MEDICAMENTS & COMPRIMES</p>
+                        </li>
+                        <li class="mt-2 flex items-center gap-2">
+                            <img src="Categories Icons/category-sirop.png" alt="" class="w-[30px]">
+                            <p>SIROP & SOLUTION</p>
+                        </li>
+                        <li class="mt-2 flex items-center gap-2">
+                            <img src="Categories Icons/category-protection.png" alt="" class="w-[30px]">
+                            <p>PROTECTION</p>
+                        </li>
+                        <li class="mt-2 flex items-center gap-2">
+                            <img src="Categories Icons/category-dispositif.png" alt="" class="w-[30px]">
+                            <p>APPAREILS & DISPOSITIFS</p>
+                        </li>
+                        <li class="mt-2 flex items-center gap-2">
+                            <img src="Categories Icons/category-vitamin.png" alt="" class="w-[30px]">
+                            <p>VITAMINES & SUPPLEMENTS</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-5 w-[50%]">
+                    <p>FILTRER PAR PRIX</p>
+
+                    <input type="range" class="custom-range bg-transparent w-full">
+
+                    <div class="flex justify-between">
+                        <p>1 000 FCFA - 100 000 FCFA</p>
+                        <p class="text-bold"> FILTRER</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 flex justify-center lg:justify-start">
+                    <img src="Home-Images/pub-1.jpg" alt="" class="rounded">
+                </div>
+            </div>
+            <div class="lg:w-[75%]">
+                <div class="flex justify-between">
+                    <div class="flex w-[50%] gap-5">
+                        <svg version="1.1" width="32" height="32" viewBox="0 0 77.102364 75.590553"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path style="fill:#3db3bd;stroke-width:0.755906"
+                                    d="m 0,64.629923 v -10.96063 h 10.96063 10.96063 v 10.96063 10.96063 H 10.96063 0 Z m 27.212599,0 v -10.96063 h 11.338583 11.338583 v 10.96063 10.96063 H 38.551182 27.212599 Z m 27.968505,0 v -10.96063 h 10.96063 10.96063 v 10.96063 10.96063 H 66.141734 55.181104 Z M 0,37.795276 V 26.456694 H 10.96063 21.92126 V 37.795276 49.133859 H 10.96063 0 Z M 27.551838,48.171691 C 27.339967,47.619564 27.262003,42.592858 27.378585,37.001235 l 0.211967,-10.166589 h 10.96063 10.96063 v 10.96063 10.960631 L 38.724436,48.965733 C 30.303952,49.129521 27.852537,48.955299 27.551838,48.171691 Z M 55.181104,37.795276 V 26.456694 h 10.96063 10.96063 V 37.795276 49.133859 H 66.141734 55.181104 Z M 0,10.96063 V 0 H 10.96063 21.92126 V 10.96063 21.92126 H 10.96063 0 Z m 27.212599,0 V 0 H 38.551182 49.889765 V 10.96063 21.92126 H 38.551182 27.212599 Z m 27.968505,0 V 0 h 10.96063 10.96063 v 10.96063 10.96063 h -10.96063 -10.96063 z" />
+                            </g>
+                        </svg>
+
+                        <img src="./Categories Icons/menu-list.png" alt="Vue liste" class="w-8 h-8 ms-1 cursor-pointer">
+
+                        <p>1-9 sur 150 éléments visibles</p>
+                    </div>
+
+                    <div>
+                        <select name="" id="" class="outline-none border rounded w-[200px] p-1">
+                            <option value="1">Trier par nom</option>
+                            <option value="2">Trier par prix</option>
+                            <option value="3">Trier par date</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-5">
+                    <div class="rounded p-3 flex flex-col justify-center items-center">
+                        <div class="relative bg-transparent">
+                        <div class="mt-5">
+                        <img src="./Product-Images/product5.jpg" alt="">
+                        
+                        </div>
+                        <span class="absolute top-0 left-0 text">New</span> 
+                        <span class="absolute top-0 right-0 text">-20%</span>
+                        </div>
+                        <div>
+
+                        </div>
+                        <p class="mt-2">Name of Product 1</p>
+                        <p class="text-bold text">Price</p>
+                        <button class="background text-white w-60 p-1 rounded">
+                            <a href="">Ajouter au panier</a>
+                        </button>
+
+                        <div class="flex justify-between w-60 mt-2">
+                            <p>Aperçu</p>
+                            <p>Wishlist</p>
+                        </div>
+                    </div>
+                    <div class="border rounded p-3">
+                        <img src="./Home-Images/produit2.jpg" alt="" class="w-full h-auto">
+                        <p class="mt-2">Nom du produit</p>
+                        <p class="text-bold">15 000 FCFA</p>
+                    </div>
+                    <div class="border rounded p-3">
+                        <img src="./Home-Images/produit3.jpg" alt="" class="w-full h-auto">
+                        <p class="mt-2">Nom du produit</p>
+                        <p class="text-bold">20 000 FCFA</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
