@@ -14,292 +14,248 @@
 <body>
     <header>
 
-    <!-- TOP BAR -->
-    <nav class="fixed top-0 left-0 right-0 z-50 background text-white px-3 py-3">
-        <div class="flex flex-col sm:flex-row
+        <!-- TOP BAR -->
+        <nav class="fixed top-0 left-0 right-0 z-50 background text-white px-3 py-3">
+            <div class="flex flex-col sm:flex-row
                     items-center justify-center
                     sm:justify-between
                     gap-2 sm:gap-0
                     text-center sm:text-left">
 
-            <p class="text-sm sm:text-base md:text-lg">
-                Livraison gratuite pour toute commande de plus de 10.000 FCFA
-            </p>
+                <p class="text-sm sm:text-base md:text-lg">
+                    Livraison gratuite pour toute commande de plus de 10.000 FCFA
+                </p>
 
-            <ul class="flex justify-center sm:justify-end gap-4 sm:gap-5 sm:me-2">
-                <li>
-                    <i class="fa-brands fa-facebook text-2xl sm:text-3xl cursor-pointer"></i>
-                </li>
-                <li>
-                    <i class="fa-brands fa-x-twitter text-2xl sm:text-3xl cursor-pointer"></i>
-                </li>
-                <li>
-                    <i class="fa-brands fa-instagram text-2xl sm:text-3xl cursor-pointer"></i>
-                </li>
-                <li>
-                    <i class="fa-brands fa-google text-2xl sm:text-3xl cursor-pointer"></i>
-                </li>
-            </ul>
+                <ul class="flex justify-center sm:justify-end gap-4 sm:gap-5 sm:me-2">
+                    <li>
+                        <i class="fa-brands fa-facebook text-2xl sm:text-3xl cursor-pointer"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-x-twitter text-2xl sm:text-3xl cursor-pointer"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram text-2xl sm:text-3xl cursor-pointer"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-google text-2xl sm:text-3xl cursor-pointer"></i>
+                    </li>
+                </ul>
 
-        </div>
-    </nav>
+            </div>
+        </nav>
 
 
-    <!-- MAIN HEADER -->
-    <section
-        class="pt-28 sm:pt-24 lg:pt-28
+        <!-- MAIN HEADER -->
+        <section class="pt-28 sm:pt-24 lg:pt-28
                px-4
                flex flex-col lg:flex-row
                items-center lg:items-start
-               gap-5"
-    >
+               gap-5">
 
-        <!-- LOGO + MOBILE MENU -->
-        <div
-            class="w-full lg:w-auto
+            <!-- LOGO + MOBILE MENU -->
+            <div class="w-full lg:w-auto
                    shrink-0
-                   flex justify-between items-center"
-        >
+                   flex justify-between items-center">
 
-            <img
-                src="../img/icons/Brand-Logo.png"
-                alt="Logo"
-                class="w-[180px] sm:w-[240px] md:w-[280px]
+                <img src="../img/icons/Brand-Logo.png" alt="Logo" class="w-[180px] sm:w-[240px] md:w-[280px]
                        lg:w-[300px]
-                       h-auto"
-            >
+                       h-auto">
 
-            <!-- Hamburger -->
-            <label
-                for="menu"
-                class="cursor-pointer lg:hidden"
-            >
-                <i class="ri-menu-line
+                <!-- Hamburger -->
+                <label for="menu" class="cursor-pointer lg:hidden">
+                    <i class="ri-menu-line
                           text-gray-700
                           text-3xl sm:text-4xl">
-                </i>
-            </label>
-
-        </div>
-
-
-        <!-- CHECKBOX -->
-        <input
-            type="checkbox"
-            id="menu"
-            class="peer hidden"
-        >
-
-
-        <!-- SEARCH + DESKTOP NAVIGATION -->
-        <div
-            class="w-full
-                   lg:flex-1
-                   flex flex-col
-                   items-center lg:items-start"
-        >
-
-            <!-- SEARCH -->
-            <div class="relative w-full max-w-[800px]">
-
-                <input
-                    type="search"
-                    id="search"
-                    class="border rounded-full
-                           px-3 py-2
-                           w-full
-                           focus:outline-cyan-600"
-                >
-
-                <label
-                    for="search"
-                    class="absolute
-                           background text-white
-                           rounded-full
-                           px-4 sm:px-6
-                           flex justify-center items-center
-                           top-0 right-0
-                           h-full"
-                >
-                    <i class="fa-solid fa-magnifying-glass
-                              text-2xl sm:text-3xl">
                     </i>
                 </label>
 
             </div>
 
 
-            <!-- DESKTOP NAVIGATION -->
-            <nav
-                class="hidden lg:flex
+            <!-- CHECKBOX -->
+            <input type="checkbox" id="menu" class="peer hidden">
+
+
+            <!-- SEARCH + DESKTOP NAVIGATION -->
+            <div class="w-full
+                   lg:flex-1
+                   flex flex-col
+                   items-center">
+
+                <!-- SEARCH -->
+                <div class="relative w-full max-w-[800px] ">
+
+                    <input type="search" id="search" class="border rounded-full
+                           px-3 py-2
+                           w-full
+                           focus:outline-cyan-600">
+
+                    <label for="search" class="absolute
+                           background text-white
+                           rounded-full
+                           px-4 sm:px-6
+                           flex justify-center items-center
+                           top-0 right-0
+                           h-full">
+                        <i class="fa-solid fa-magnifying-glass
+                              text-2xl sm:text-3xl">
+                        </i>
+                    </label>
+
+                </div>
+
+
+                <!-- DESKTOP NAVIGATION -->
+                <nav class="hidden lg:flex
                        flex-wrap
                        w-full max-w-[700px]
                        justify-between
                        gap-5
                        font-bold
-                       mt-3"
-            >
+                       mt-3">
 
-                <a href="#">Home +</a>
-                <a href="#">Shop +</a>
-                <a href="#">Blogs +</a>
-                <a href="#">Page +</a>
-                <a href="#">On Sale +</a>
-                <a href="#">Contact +</a>
+                    <a href="#">Home +</a>
+                    <a href="#">Shop +</a>
+                    <a href="#">Blogs +</a>
+                    <a href="#">Page +</a>
+                    <a href="#">On Sale +</a>
+                    <a href="#">Contact +</a>
 
-            </nav>
+                </nav>
 
-        </div>
+            </div>
 
 
-        <!-- DESKTOP ACCOUNT -->
-        <div
-            class="hidden lg:flex
-                   flex-col
+            <!-- DESKTOP ACCOUNT -->
+            <div class="hidden lg:flex
+                   
                    items-center
                    justify-center
-                   gap-3"
-        >
+                   gap-3">
 
-            <p class="whitespace-nowrap">
-                <a href="">SIGN IN</a> /
-                <a href="">SIGN UP</a>
-            </p>
+                <p class="whitespace-nowrap">
+                    <a href="">SIGN IN</a> /
+                    <a href="">SIGN UP</a>
+                </p>
 
-            <div class="flex items-center gap-3">
+                <div class="flex items-center gap-3">
 
-                <i class="fa-regular fa-heart text-2xl"></i>
+                    <i class="fa-regular fa-heart text-2xl"></i>
 
-                <div class="relative">
-                    <i class="ri-git-repository-private-line text-2xl"></i>
+                    <div class="relative">
+                        <i class="ri-git-repository-private-line text-2xl"></i>
 
-                    <span
-                        class="absolute
+                        <span class="absolute
                                rounded-full
                                px-2
                                text-sm
                                bg-red-500
-                               left-4 top-0"
-                    >
-                        4
-                    </span>
-                </div>
+                               left-4 top-0">
+                            4
+                        </span>
+                    </div>
 
-                <p class="whitespace-nowrap">
-                    0 FCFA
-                </p>
+                    <p class="whitespace-nowrap">
+                        0 FCFA
+                    </p>
+
+                </div>
 
             </div>
 
-        </div>
 
-    </section>
-
-
-    <!-- MOBILE MENU -->
-    <div
-        class="fixed z-50
+            <!-- MOBILE MENU -->
+            <div class="fixed z-50
                top-0 bottom-0 left-0
                w-[75%] sm:w-[60%] md:w-[50%]
                bg-white shadow-lg
                -translate-x-full
                transition-transform duration-300
-               peer-checked:translate-x-0"
-    >
+               peer-checked:translate-x-0">
 
-        <!-- MOBILE MENU HEADER -->
-        <div
-            class="px-3 py-5
+                <!-- MOBILE MENU HEADER -->
+                <div class="px-3 py-5
                    flex justify-between items-center
-                   border-b border-gray-400"
-        >
+                   border-b border-gray-400">
 
-            <img
-                src="../img/icons/Brand-Logo.png"
-                alt="Logo"
-                class="w-[150px] sm:w-[180px] md:w-[200px] h-auto"
-            >
+                    <img src="../img/icons/Brand-Logo.png" alt="Logo"
+                        class="w-[150px] sm:w-[180px] md:w-[200px] h-auto">
 
-            <label
-                for="menu"
-                class="cursor-pointer"
-            >
-                <i class="fa-solid fa-xmark
+                    <label for="menu" class="cursor-pointer">
+                        <i class="fa-solid fa-xmark
                           text-2xl text-gray-600">
-                </i>
-            </label>
+                        </i>
+                    </label>
 
-        </div>
+                </div>
 
 
-        <!-- MOBILE LINKS -->
-        <nav
-            class="flex flex-col
+                <!-- MOBILE LINKS -->
+                <nav class="flex flex-col
                    gap-4
                    text-lg
                    font-bold
                    px-3 py-5
-                   border-b border-gray-400"
-        >
+                   border-b border-gray-400">
 
-            <a href="#">Home +</a>
-            <a href="#">Shop +</a>
-            <a href="#">Blogs +</a>
-            <a href="#">Page +</a>
-            <a href="#">On Sale +</a>
-            <a href="#">Contact +</a>
+                    <a href="#">Home +</a>
+                    <a href="#">Shop +</a>
+                    <a href="#">Blogs +</a>
+                    <a href="#">Page +</a>
+                    <a href="#">On Sale +</a>
+                    <a href="#">Contact +</a>
 
-        </nav>
+                </nav>
 
 
-        <!-- MOBILE ACCOUNT -->
-        <div class="flex flex-col gap-5 px-3 py-5">
+                <!-- MOBILE ACCOUNT -->
+                <div class="flex flex-col gap-5 px-3 py-5">
 
-            <div class="flex gap-3">
-                <a href="">SIGN IN</a>
-                <a href="">SIGN UP</a>
-            </div>
+                    <div class="flex gap-3">
+                        <a href="">SIGN IN</a>
+                        <a href="">SIGN UP</a>
+                    </div>
 
-            <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-4">
 
-                <i class="fa-regular fa-heart text-2xl"></i>
+                        <i class="fa-regular fa-heart text-2xl"></i>
 
-                <div class="relative">
-                    <i class="ri-git-repository-private-line text-2xl"></i>
+                        <div class="relative">
+                            <i class="ri-git-repository-private-line text-2xl"></i>
 
-                    <span
-                        class="absolute
+                            <span class="absolute
                                rounded-full
                                px-2
                                text-sm
                                bg-red-500
-                               left-4 top-0"
-                    >
-                        4
-                    </span>
-                </div>
+                               left-4 top-0">
+                                4
+                            </span>
+                        </div>
 
-                <p>0 FCFA</p>
+                        <p>0 FCFA</p>
+
+                    </div>
+
+                </div>
 
             </div>
 
-        </div>
-
-    </div>
+        </section>
 
 
-    <!-- OVERLAY -->
-    <label
-        for="menu"
-        class="fixed inset-0 z-40
+
+
+
+        <!-- OVERLAY -->
+        <label for="menu" class="fixed inset-0 z-40
                invisible opacity-0
                bg-black/40
                transition-opacity duration-300
                peer-checked:visible
-               peer-checked:opacity-100"
-    ></label>
+               peer-checked:opacity-100"></label>
 
-</header>
+    </header>
 
     <main class="mt-10 ">
         <section class="flex flex-col lg:flex-row gap-10 px-5">
@@ -348,7 +304,7 @@
 
                     <input type="range" class="custom-range bg-transparent w-full">
 
-                    <div class="flex justify-between">
+                    <div class="flex justify-between flex-wrap">
                         <p>1 000 FCFA - 100 000 FCFA</p>
                         <p class="font-bold cursor-pointer"> FILTRER</p>
                     </div>
@@ -360,8 +316,8 @@
             </div>
             <div class="lg:w-[75%]">
                 <div>
-                    <div class="flex justify-between">
-                        <div class="flex w-[50%] gap-5">
+                    <div class="flex md:justify-between flex-wrap md:flex-nowrap items-center gap-5">
+                        <div class="flex w-[550px] gap-5 flex-wrap">
                             <svg version="1.1" width="32" height="32" viewBox="0 0 77.102364 75.590553"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -483,7 +439,7 @@
                                 <div class="mt-5">
                                     <img src="./Product-Images/product63.jpg" alt="" class="w-[387px]">
                                 </div>
-                                
+
                                 <span class="absolute top-0 right-0 text">-20%</span>
 
                             </div>
@@ -606,12 +562,13 @@
 
         </section>
 
-        <section class="flex flex-col justify-center mt-10 items-center">
+        <section class="flex flex-col justify-center mt-10 items-center text-center">
             <p class="font-bold">Inscrivez-vous à notre newsletter</p>
             <p>Rejoignez 60 000+ nouveau adhérant et obtenez un nouveau coupon de réduction chaque Samedi</p>
         </section>
 
-        <section class="mt-10 flex justify-center items-center gap-50">
+        <section class="flex justify-center mb-5">
+            <div class="flex flex-wrap justify-center md:justify-between w-5xl items-center mt-10 px-5 md:flex-row flex-col gap-4">
             <div class="flex">
                 <div>
                     <i class="ri-global-line text-8xl"></i>
@@ -624,11 +581,12 @@
             </div>
             <div class="flex">
                 <div>
-                    <i class="ri-global-line text-8xl"></i>
+                    <i class="fa-solid fa-mobile-screen-button text-7xl"></i>
                 </div>
+
                 <div>
                     <p class="font-bold">Pour tout contact</p>
-                    <p>Consulter ce numero</p>
+                    <p>Consulter ce numéro</p>
                     <p>+227 00000000</p>
                 </div>
             </div>
@@ -640,11 +598,210 @@
                     <img src="./../img/icons/google-play.png" alt="">
                 </div>
             </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
+        <div class="border-t border-b py-10">
+            <div class="mx-4 sm:mx-6 lg:mx-10 flex flex-col lg:flex-row gap-10">
+
+                <!-- Logo + description -->
+                <div class="w-full lg:flex-1">
+
+                    <img src="../img/icons/Brand-Logo.png" alt="Pharma-Shop" class="w-[180px] sm:w-[200px] h-auto">
+
+                    <p class="mt-5 leading-7 text-gray-600">
+                        Pharma-Shop est fière d'être la meilleure pharmacie
+                        en ligne au Niger avec une gamme de produits de haute qualité.
+                    </p>
+
+                </div>
+
+
+                <!-- Informations -->
+                <div class="w-full lg:flex-[2]">
+
+                    <div class="border-t border-b lg:border-t-0 lg:border-b-0
+                        lg:border-l lg:border-r
+                        px-0 lg:px-6 py-8 lg:py-0">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                            <!-- Information -->
+                            <div>
+
+                                <h3 class="font-bold uppercase text-lg">
+                                    Information
+                                </h3>
+
+                                <ul class="mt-6 space-y-3 text-gray-600">
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Dernières nouvelles
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Vendez votre pharmacie
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Programme d'affiliés
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Carrières
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Relations d'investisseurs
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+
+                            <!-- Deuxième colonne -->
+                            <div>
+
+                                <h3 class="font-bold uppercase text-lg">
+                                    Information
+                                </h3>
+
+                                <ul class="mt-6 space-y-3 text-gray-600">
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Dernières nouvelles
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Vendez votre pharmacie
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Programme d'affiliés
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Carrières
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Relations d'investisseurs
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+
+                            <!-- Services -->
+                            <div>
+
+                                <h3 class="font-bold uppercase text-lg">
+                                    Services
+                                </h3>
+
+                                <ul class="mt-6 space-y-3 text-gray-600">
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Livraison
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Retour
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Rappel de produits
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Nous contacter
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Carte du site
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Réseaux sociaux -->
+                <div class="w-full lg:flex-1">
+
+                    <p class="font-bold uppercase text-xl">Reseaux Sociaux</p>
+                    <ul class="mt-10">
+                        <li class="flex gap-5 "> <i
+                                class="fa-brands fa-facebook text-2xl sm:text-3xl cursor-pointer"></i>
+                            <p>Facebook</p>
+                        </li>
+                        <li class="flex gap-5 mt-2"> <i
+                                class="fa-brands fa-x-twitter text-2xl sm:text-3xl cursor-pointer"></i>
+                            <p>Twitter X</p>
+                        </li>
+                        <li class="flex gap-5 mt-2"> <i
+                                class="fa-brands fa-instagram text-2xl sm:text-3xl cursor-pointer"></i>
+                            <p>Instagram</p>
+                        </li>
+                        <li class="flex gap-5 mt-2"> <i
+                                class="fa-brands fa-google text-2xl sm:text-3xl cursor-pointer"></i>
+                            <p>Google</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="mx-4 sm:mx-6 lg:mx-10 flex gap-2 pt-10 justify-center items-center flex-col lg:flex-row">
+                <p class="font-bold">Nos partenaires de paiement:</p>
+                <img src="../img/icons/payment.png" alt="Visa" class="w-[600px] h-auto">                                              
+                
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="px-4 py-5  text-sm ">
+            © 2026 Pharma-Shop. Tous droits réservés.
+        </div>
 
     </footer>
 </body>

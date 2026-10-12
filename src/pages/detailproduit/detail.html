@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../../../style.css">
+    <title>Shops</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- TOP BAR -->
+        <nav class="fixed top-0 left-0 right-0 z-50 background text-white px-3 py-3">
+            <div class="flex flex-col sm:flex-row
+                    items-center justify-center
+                    sm:justify-between
+                    gap-2 sm:gap-0
+                    text-center sm:text-left">
+
+                <p class="text-sm sm:text-base md:text-lg">
+                    Livraison gratuite pour toute commande de plus de 10.000 FCFA
+                </p>
+
+                <ul class="flex justify-center sm:justify-end gap-4 sm:gap-5 sm:me-2">
+                    <li>
+                        <i class="fa-brands fa-facebook text-2xl sm:text-3xl cursor-pointer"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-x-twitter text-2xl sm:text-3xl cursor-pointer"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram text-2xl sm:text-3xl cursor-pointer"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-google text-2xl sm:text-3xl cursor-pointer"></i>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <!-- MAIN HEADER -->
+        <section class="pt-28 sm:pt-24 lg:pt-28
+               px-4
+               flex flex-col lg:flex-row
+               items-center lg:items-start
+               gap-5">
+
+            <!-- LOGO + MOBILE MENU -->
+            <div class="w-full lg:w-auto
+                   shrink-0
+                   flex justify-between items-center">
+
+                <img src="../img/icons/Brand-Logo.png" alt="Logo" class="w-[180px] sm:w-[240px] md:w-[280px]
+                       lg:w-[300px]
+                       h-auto">
+
+                <!-- Hamburger -->
+                <label for="menu" class="cursor-pointer lg:hidden">
+                    <i class="ri-menu-line
+                          text-gray-700
+                          text-3xl sm:text-4xl">
+                    </i>
+                </label>
+
+            </div>
+
+
+            <!-- CHECKBOX -->
+            <input type="checkbox" id="menu" class="peer hidden">
+
+
+            <!-- SEARCH + DESKTOP NAVIGATION -->
+            <div class="w-full
+                   lg:flex-1
+                   flex flex-col
+                   items-center">
+
+                <!-- SEARCH -->
+                <div class="relative w-full max-w-[800px] ">
+
+                    <input type="search" id="search" class="border rounded-full
+                           px-3 py-2
+                           w-full
+                           focus:outline-cyan-600">
+
+                    <label for="search" class="absolute
+                           background text-white
+                           rounded-full
+                           px-4 sm:px-6
+                           flex justify-center items-center
+                           top-0 right-0
+                           h-full">
+                        <i class="fa-solid fa-magnifying-glass
+                              text-2xl sm:text-3xl">
+                        </i>
+                    </label>
+
+                </div>
+
+
+                <!-- DESKTOP NAVIGATION -->
+                <nav class="hidden lg:flex
+                       flex-wrap
+                       w-full max-w-[700px]
+                       justify-between
+                       gap-5
+                       font-bold
+                       mt-3">
+
+                    <a href="#">Home +</a>
+                    <a href="#">Shop +</a>
+                    <a href="#">Blogs +</a>
+                    <a href="#">Page +</a>
+                    <a href="#">On Sale +</a>
+                    <a href="#">Contact +</a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- DESKTOP ACCOUNT -->
+            <div class="hidden lg:flex
+                   
+                   items-center
+                   justify-center
+                   gap-3">
+
+                <p class="whitespace-nowrap">
+                    <a href="">SIGN IN</a> /
+                    <a href="">SIGN UP</a>
+                </p>
+
+                <div class="flex items-center gap-3">
+
+                    <i class="fa-regular fa-heart text-2xl"></i>
+
+                    <div class="relative">
+                        <i class="ri-git-repository-private-line text-2xl"></i>
+
+                        <span class="absolute
+                               rounded-full
+                               px-2
+                               text-sm
+                               bg-red-500
+                               left-4 top-0">
+                            4
+                        </span>
+                    </div>
+
+                    <p class="whitespace-nowrap">
+                        0 FCFA
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOBILE MENU -->
+            <div class="fixed z-50
+               top-0 bottom-0 left-0
+               w-[75%] sm:w-[60%] md:w-[50%]
+               bg-white shadow-lg
+               -translate-x-full
+               transition-transform duration-300
+               peer-checked:translate-x-0">
+
+                <!-- MOBILE MENU HEADER -->
+                <div class="px-3 py-5
+                   flex justify-between items-center
+                   border-b border-gray-400">
+
+                    <img src="../img/icons/Brand-Logo.png" alt="Logo"
+                        class="w-[150px] sm:w-[180px] md:w-[200px] h-auto">
+
+                    <label for="menu" class="cursor-pointer">
+                        <i class="fa-solid fa-xmark
+                          text-2xl text-gray-600">
+                        </i>
+                    </label>
+
+                </div>
+
+
+                <!-- MOBILE LINKS -->
+                <nav class="flex flex-col
+                   gap-4
+                   text-lg
+                   font-bold
+                   px-3 py-5
+                   border-b border-gray-400">
+
+                    <a href="#">Home +</a>
+                    <a href="#">Shop +</a>
+                    <a href="#">Blogs +</a>
+                    <a href="#">Page +</a>
+                    <a href="#">On Sale +</a>
+                    <a href="#">Contact +</a>
+
+                </nav>
+
+
+                <!-- MOBILE ACCOUNT -->
+                <div class="flex flex-col gap-5 px-3 py-5">
+
+                    <div class="flex gap-3">
+                        <a href="">SIGN IN</a>
+                        <a href="">SIGN UP</a>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <i class="fa-regular fa-heart text-2xl"></i>
+
+                        <div class="relative">
+                            <i class="ri-git-repository-private-line text-2xl"></i>
+
+                            <span class="absolute
+                               rounded-full
+                               px-2
+                               text-sm
+                               bg-red-500
+                               left-4 top-0">
+                                4
+                            </span>
+                        </div>
+
+                        <p>0 FCFA</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- OVERLAY -->
+        <label for="menu" class="fixed inset-0 z-40
+               invisible opacity-0
+               bg-black/40
+               transition-opacity duration-300
+               peer-checked:visible
+               peer-checked:opacity-100"></label>
+
+    </header>
+
+    <main class="mt-10 ">
+        <section
+            class="flex flex-col md:flex-row justify-around items-center gap-10 px-5 border-b border-gray-300 pb-10 mx-5">
+            <div>
+                <img src="../shops/Product-Images/product5.jpg" alt="Logo" class="w-[300px] sm:w-[300px] md:w-[400px] lg:w-[500px]
+                       h-auto">
+            </div>
+
+            <div class="flex flex-col gap-5 justify-center items-start px-5 w-auto md:w-lg">
+                <div class="flex gap-3 items-center flex-wrap">
+                    <span class="flex gap-1 items-center text-sm">
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-gray-300"></i>
+                    </span>
+
+                    <span class="text-gray-600">(13 avis clients)</span>
+                </div>
+                <p class="font-bold text-2xl">Nom du produit</p>
+                <p class="text-gray-600">Description du produit</p>
+                <p class="text">2 000 FCFA</p>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sed repudiandae
+                    ab numquam reprehenderit dolorum </p>
+
+                <div class="flex gap-3 items-center flex-wrap">
+                    <input type="number" placeholder="Quantité"
+                        class="border rounded px-3 py-2 w-20 focus:outline-cyan-600 w-full md:w-auto">
+                    <button class="background text-white px-4 py-2 rounded cursor-pointer transition">Ajouter au
+                        panier</button>
+                </div>
+                <div class="listesouhait flex gap-3 items-center flex-wrap">
+                    <p>
+                        <i class="fa-regular fa-heart"></i> Ajouter à la liste de souhaits
+                    </p>
+                    <div class="partager flex gap-3 items-center">
+                        <p>Partager:</p>
+                        <span class="">
+                            <i class="fa-brands fa-facebook cursor-pointer"></i>
+                            <i class="fa-brands fa-x-twitter cursor-pointer"></i>
+                            <i class="fa-brands fa-instagram cursor-pointer"></i>
+                            <i class="fa-brands fa-google cursor-pointer"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="categories">
+                    <p>Catégories: <span class="text">Nom de la catégories</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="commentaires mt-5 flex flex-col gap-5">
+            <div class="p-2 border border-cyan-600 rounded-lg pb-10 mx-5  w-full md:w-6xl">
+                <div class="flex flex-col gap-5">
+                    <div class="flex gap-3 w-full justify-between">
+                        <div>
+                            <p class="font-bold text-xl">John Doe</p>
+                            <span class="text-gray-600">lun 01 jan 2026</span>
+                        </div>
+
+                        <span class="flex gap-1  text-sm">
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque est commodi alias, culpa
+                        rerum deserunt quam? Exercitationem, culpa doloribus tenetur laboriosam ab error ea et illum,
+                        provident architecto, eligendi repudiandae?</p>
+                </div>
+            </div>
+
+            <div class="p-2 border border-cyan-600 rounded-lg pb-10 mx-5  w-full md:w-6xl">
+                <div class="flex flex-col gap-5">
+                    <div class="flex gap-3 w-full justify-between">
+                        <div>
+                            <p class="font-bold text-xl">John Doe</p>
+                            <span class="text-gray-600">lun 01 jan 2026</span>
+                        </div>
+
+                        <span class="flex gap-1  text-sm">
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque est commodi alias, culpa
+                        rerum deserunt quam? Exercitationem, culpa doloribus tenetur laboriosam ab error ea et illum,
+                        provident architecto, eligendi repudiandae?</p>
+                </div>
+            </div>
+
+            <div class="p-2 border border-cyan-600 rounded-lg pb-10 mx-5  w-full md:w-6xl">
+                <div class="flex flex-col gap-5">
+                    <div class="flex gap-3 w-full justify-between">
+                        <div>
+                            <p class="font-bold text-xl">John Doe</p>
+                            <span class="text-gray-600">lun 01 jan 2026</span>
+                        </div>
+
+                        <span class="flex gap-1  text-sm">
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque est commodi alias, culpa
+                        rerum deserunt quam? Exercitationem, culpa doloribus tenetur laboriosam ab error ea et illum,
+                        provident architecto, eligendi repudiandae?</p>
+                </div>
+            </div>
+
+            <div class="p-2 border border-cyan-600 rounded-lg pb-10 mx-5  w-full md:w-6xl">
+                <div class="flex flex-col gap-5">
+                    <div class="flex gap-3 w-full justify-between">
+                        <div>
+                            <p class="font-bold text-xl">John Doe</p>
+                            <span class="text-gray-600">lun 01 jan 2026</span>
+                        </div>
+
+                        <span class="flex gap-1  text-sm">
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque est commodi alias, culpa
+                        rerum deserunt quam? Exercitationem, culpa doloribus tenetur laboriosam ab error ea et illum,
+                        provident architecto, eligendi repudiandae?</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center w-full">
+                <button class="background text-white px-4 py-2 rounded cursor-pointer transition mx-5">+ Plus de
+                    commentaire</button>
+            </div>
+        </section>
+
+        <section class="categories mt-10 flex flex-col gap-5 justify-center mx-5">
+            <h2 class="text-2xl font-bold">Dans la même catégorie</h2>
+            <div class="flex flex-wrap justify-center md:justify-between items-center mt-10 px-5 md:flex-row flex-col">
+                <div class="flex flex-col gap-1">
+                    <img src="../shops/Product-Images/product15.jpg" alt="Logo" class="w-[300px] sm:w-[300px] md:w-[400px] lg:w-[400px]
+                       h-auto">
+                    <span class="text-gray-500">Catégorie</span>
+                    <p class="font-bold">Nom du produit</p>
+                    <span>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-gray-300 text-sm"></i>
+                    </span>
+                    <p class="font-bold"> <span class="line-through">2 000 fcfa:</span> <span class="text-red-500">1 500
+                            fcfa</span></p>
+                    <p class=""><i class="fa-solid fa-basket-shopping"></i> ADD TO CART</p>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <img src="../shops/Product-Images/product26.jpg" alt="Logo" class="w-[300px] sm:w-[300px] md:w-[400px] lg:w-[400px]
+                       h-auto">
+                    <span class="text-gray-500">Catégorie</span>
+                    <p class="font-bold">Nom du produit</p>
+                    <span>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-gray-300 text-sm"></i>
+                    </span>
+                    <p class="font-bold"> <span class="line-through">2 000 fcfa:</span> <span class="text-red-500">1 500
+                            fcfa</span></p>
+                    <p class=""><i class="fa-solid fa-basket-shopping"></i> ADD TO CART</p>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <img src="../shops/Product-Images/product24.jpg" alt="Logo" class="w-[300px] sm:w-[300px] md:w-[400px] lg:w-[400px]
+                       h-auto">
+                    <span class="text-gray-500">Catégorie</span>
+                    <p class="font-bold">Nom du produit</p>
+                    <span>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-gray-300 text-sm"></i>
+                    </span>
+                    <p class="font-bold"> <span class="line-through">2 000 fcfa:</span> <span class="text-red-500">1 500
+                            fcfa</span></p>
+                    <p class=""><i class="fa-solid fa-basket-shopping"></i> ADD TO CART</p>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <img src="../shops/Product-Images/product21.jpg" alt="Logo" class="w-[300px] sm:w-[300px] md:w-[400px] lg:w-[400px]
+                       h-auto">
+                    <span class="text-gray-500">Catégorie</span>
+                    <p class="font-bold">Nom du produit</p>
+                    <span>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <i class="fa-solid fa-star text-gray-300 text-sm"></i>
+                    </span>
+                    <p class="font-bold"> <span class="line-through">2 000 fcfa:</span> <span class="text-red-500">1 500
+                            fcfa</span></p>
+                    <p class=""><i class="fa-solid fa-basket-shopping"></i> ADD TO CART</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col justify-center mt-10 items-center text-center">
+            <p class="font-bold">Inscrivez-vous à notre newsletter</p>
+            <p>Rejoignez 60 000+ nouveau adhérant et obtenez un nouveau coupon de réduction chaque Samedi</p>
+        </section>
+
+        <section class="flex justify-center mb-5">
+            <div
+                class="flex flex-wrap justify-center md:justify-between w-5xl items-center mt-10 px-5 md:flex-row flex-col gap-4">
+                <div class="flex">
+                    <div>
+                        <i class="ri-global-line text-8xl"></i>
+                    </div>
+                    <div>
+                        <p class="font-bold">Niamey, Niger</p>
+                        <p>Niamey, Niger</p>
+                        <p>BP 12000</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <i class="fa-solid fa-mobile-screen-button text-7xl"></i>
+                    </div>
+
+                    <div>
+                        <p class="font-bold">Pour tout contact</p>
+                        <p>Consulter ce numéro</p>
+                        <p>+227 00000000</p>
+                    </div>
+                </div>
+                <div>
+                    <p>Télécharger notre app maintenant</p>
+                    <div class="flex justify-between gap-3">
+
+                        <img src="./../img/icons/app-store.png" alt="">
+                        <img src="./../img/icons/google-play.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="border-t border-b py-10">
+            <div class="mx-4 sm:mx-6 lg:mx-10 flex flex-col lg:flex-row gap-10">
+
+                <!-- Logo + description -->
+                <div class="w-full lg:flex-1">
+
+                    <img src="../img/icons/Brand-Logo.png" alt="Pharma-Shop" class="w-[180px] sm:w-[200px] h-auto">
+
+                    <p class="mt-5 leading-7 text-gray-600">
+                        Pharma-Shop est fière d'être la meilleure pharmacie
+                        en ligne au Niger avec une gamme de produits de haute qualité.
+                    </p>
+
+                </div>
+
+
+                <!-- Informations -->
+                <div class="w-full lg:flex-[2]">
+
+                    <div class="border-t border-b lg:border-t-0 lg:border-b-0
+                        lg:border-l lg:border-r
+                        px-0 lg:px-6 py-8 lg:py-0">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                            <!-- Information -->
+                            <div>
+
+                                <h3 class="font-bold uppercase text-lg">
+                                    Information
+                                </h3>
+
+                                <ul class="mt-6 space-y-3 text-gray-600">
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Dernières nouvelles
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Vendez votre pharmacie
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Programme d'affiliés
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Carrières
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Relations d'investisseurs
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+
+                            <!-- Deuxième colonne -->
+                            <div>
+
+                                <h3 class="font-bold uppercase text-lg">
+                                    Information
+                                </h3>
+
+                                <ul class="mt-6 space-y-3 text-gray-600">
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Dernières nouvelles
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Vendez votre pharmacie
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Programme d'affiliés
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Carrières
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Relations d'investisseurs
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+
+                            <!-- Services -->
+                            <div>
+
+                                <h3 class="font-bold uppercase text-lg">
+                                    Services
+                                </h3>
+
+                                <ul class="mt-6 space-y-3 text-gray-600">
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Livraison
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Retour
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Rappel de produits
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Nous contacter
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="hover:text-cyan-600 transition">
+                                            Carte du site
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Réseaux sociaux -->
+                <div class="w-full lg:flex-1">
+
+                    <p class="font-bold uppercase text-xl">Reseaux Sociaux</p>
+                    <ul class="mt-10">
+                        <li class="flex gap-5 "> <i
+                                class="fa-brands fa-facebook text-2xl sm:text-3xl cursor-pointer"></i>
+                            <p>Facebook</p>
+                        </li>
+                        <li class="flex gap-5 mt-2"> <i
+                                class="fa-brands fa-x-twitter text-2xl sm:text-3xl cursor-pointer"></i>
+                            <p>Twitter X</p>
+                        </li>
+                        <li class="flex gap-5 mt-2"> <i
+                                class="fa-brands fa-instagram text-2xl sm:text-3xl cursor-pointer"></i>
+                            <p>Instagram</p>
+                        </li>
+                        <li class="flex gap-5 mt-2"> <i
+                                class="fa-brands fa-google text-2xl sm:text-3xl cursor-pointer"></i>
+                            <p>Google</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="mx-4 sm:mx-6 lg:mx-10 flex gap-2 pt-10 justify-center items-center flex-col lg:flex-row">
+                <p class="font-bold">Nos partenaires de paiement:</p>
+                <img src="../img/icons/payment.png" alt="Visa" class="w-[600px] h-auto">
+
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="px-4 py-5  text-sm ">
+            © 2026 Pharma-Shop. Tous droits réservés.
+        </div>
+
+    </footer>
+</body>
+
+</html>
